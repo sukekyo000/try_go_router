@@ -98,11 +98,11 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
-                onPressed: () => context.push("/a/detail"),
+                onPressed: () => context.go("/a/detail"),
                 child: const Text("Move to A Detail Page"),
               ),
               ElevatedButton(
-                onPressed: () => context.push("/b/detail"),
+                onPressed: () => context.go("/b/detail"),
                 child: const Text("Move to B Detail Page"),
               ),
             ]

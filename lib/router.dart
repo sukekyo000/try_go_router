@@ -51,6 +51,12 @@ final GoRouter router = GoRouter(
               routes: [
                 GoRoute(
                   path: 'settings',
+                  redirect: (BuildContext context, GoRouterState state) {
+                    if(login == false){
+                      return '/my_page/login';
+                    }
+                    return null;
+                  },
                   builder: (context, state) => const SettingsPage(),
                 ),
               ],

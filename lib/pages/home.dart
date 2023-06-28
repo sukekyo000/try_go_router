@@ -13,9 +13,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: (){
-            context.push("/home/detail");
-          },
+          onPressed: () => context.push("/home/detail"),
           child: const Text("詳細ページに遷移"),
         ),
       ),

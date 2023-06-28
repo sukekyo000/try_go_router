@@ -9,25 +9,12 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Settings"),
+        title: const Text("Settings Page"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            ElevatedButton(
-              onPressed: (){
-                context.push("/settings/detail");
-              },
-              child: const Text("詳細ページに遷移"),
-            ),
-            ElevatedButton(
-              onPressed: (){
-                context.push("/notification");
-              },
-              child: const Text("通知ページ"),
-            ),
-          ],
+        child: ElevatedButton(
+          onPressed: () => context.go("/home"),
+          child: const Text("ホームタブ・ホームページに遷移"),
         ),
       ),
     );
